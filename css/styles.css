@@ -542,13 +542,38 @@ h1{
 }
 
 .modal-form-title{
-    font-style: normal;
+    
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     letter-spacing: 0.03em;
     color: var(--bold-title-color);
     margin-bottom: 12px;
+}
+
+.input-label-wrapper{
+    position: relative;
+}
+
+.modal-form-input,
+.modal-form-message{
+    
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.01em;
+    border: solid 1px rgba(33, 33, 33, 0.2);
+    color: var(--black-colour);
+}
+
+.modal-form-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.01em;
+    
+    color: var(--p-text-color);
 }
 
 
