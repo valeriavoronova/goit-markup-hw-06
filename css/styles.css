@@ -893,7 +893,9 @@ footer{
 
 
 .foot-button{
-    position: relative;   
+    display: flex; 
+    justify-content: center;  
+    align-items: flex-end;
     min-width: 200px;
     height: 50px;    
     font-weight: bold;
@@ -910,11 +912,7 @@ footer{
     
 }
 
-.foot-button svg{
-    position: absolute;
-    top: 13px;
-    
-}
+
 
 /*
  */
