@@ -332,16 +332,20 @@
                     <label for="user-modal-email" class="modal-form-label">Почта</label>
                 </div>
               
-               <textarea name="user-message" placeholder="Комментарий" class="modal-form-message">
+               <textarea name="user-message" placeholder="Комментарий" class="modal-form-message"></textarea>
 
-               </textarea>
                <label class="modal-form-option-label">
                     <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox">   
-                    <span class="modal-form-action-span">
+                    <span class="modal-form-custom-checkbox">
+                        <svg width= "16" height= "14">
+                            <use href="./images/sprite.svg#icon-modal-check"></use>
+                        </svg>
+                    </span>
+                    <span class="modal-form-option-span">
                         Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
                     </span>
                 </label>
-                <button type="submit">Отправить</button>
+                <button class="modal-form-button" type="submit">Отправить</button>
            </form> 
         </div>
             
