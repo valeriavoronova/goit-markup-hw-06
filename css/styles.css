@@ -568,7 +568,7 @@ h1{
     margin-bottom: 20px;
     height: 120px;
     resize: none;
-    padding: 12px 16px;
+    padding: 16px 12px;
     
 }
 .modal-form-message::placeholder{
@@ -622,9 +622,6 @@ h1{
     margin-right: 7px;
 }
 
-
-
-
 .modal-form-checkbox:checked + .modal-form-custom-checkbox svg{
       background-color: var(--accent-color);
      
@@ -665,13 +662,12 @@ h1{
     transform: translateY(-50%);
 }
 
-.modal-form-input:not(:placeholder-shown) + svg:focus,
-.modal-form-message:not(:placeholder-shown) + svg:focus,
-.modal-form-input:focus  + svg:focus,
-.modal-form-message:focus  + svg:focus{
+
+/*.modal-form-input:focus + svg,
+{
     fill: var(--accent-color);
 
-}
+}*/
 
 .modal-form-label{
     position: absolute;
@@ -692,6 +688,11 @@ h1{
     transform: translateY(-40px);
     color: var(--accent-color);
     padding-left: 18px;
+}
+
+.modal-form-input:focus ~ svg,
+.modal-form-input:not(:placeholder-shown) ~ svg{
+    fill: var(--accent-color);
 }
 
 .modal-form-button{
