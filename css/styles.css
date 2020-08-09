@@ -554,12 +554,15 @@ h1{
 .modal-form-input-wrapper{
     position: relative;
     margin-bottom: 28px;
+    
+    
 }
 
 
 .modal-form-input{
     height: 40px;
     width: 100%;
+    padding-left: 42px;
 }    
 .modal-form-message{
     margin-bottom: 20px;
@@ -651,12 +654,28 @@ h1{
 .modal-form-message:focus{
     outline: none;
     border-color: var(--accent-color);
+    
+}
+
+.modal-form-input-wrapper svg{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    
+    transform: translateY(-50%);
+}
+
+.modal-form-input-wrapper:focus,
+.modal-form-input-wrapper:hover{
+   
+
 }
 
 .modal-form-label{
     position: absolute;
     top: 50%;
     left: 0;
+    padding-left: 42px;
     transform: translateY(-50%);
     font-size: 14px;
     
@@ -670,6 +689,7 @@ h1{
 .modal-form-input:not(:placeholder-shown) + .modal-form-label{
     transform: translateY(-40px);
     color: var(--accent-color);
+    padding-left: 18px;
 }
 
 .modal-form-button{
@@ -691,6 +711,28 @@ h1{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: transparent;
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+    fill: var(--accent-color);
 }
 
 .is-hidden{
