@@ -56,7 +56,7 @@
        
             <section class="main-section">
                 <h1>эффективные решения <br> для вашего бизнеса</h1>
-                <button class="order-button">Заказать услугу</button>
+                <button data-modal-open class="order-button">Заказать услугу</button>
             </section>
         
 
@@ -314,7 +314,7 @@
             </section>
         
         <!--modal-window-->
-        <div class="backdrop">
+        <div data-modal class="backdrop is-hidden">
            <form class="modal-form" action="#">
                <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
                <div class="modal-form-input-wrapper">
@@ -429,5 +429,7 @@
        </div>
     
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
