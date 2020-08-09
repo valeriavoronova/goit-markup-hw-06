@@ -894,8 +894,7 @@ footer{
 
 .foot-button{
     display: flex; 
-    justify-content: center;  
-    align-items: flex-end;
+    align-items: center;
     min-width: 200px;
     height: 50px;    
     font-weight: bold;
@@ -910,6 +909,11 @@ footer{
     border: 0ex;
     
     
+}
+
+.foot-button svg{
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 
